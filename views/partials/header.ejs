@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blogSite</title>
+        <link rel="stylesheet" type="text/css" href="/styles/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/js/semantic.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <a href="/" class="item">Home</a>
+                <a href="/blogs/new" class="item">New Post</a>
+                <div class="right menu">
+                    <% if (!currentUser) { %>
+                        <a href="/login" class="item">Login</a>
+                        <a href="/register" class="item">Sign Up</a>
+                    <% } else { %>
+                        <a class="item">Signed in as <%= currentUser.username %></a>
+                        <a href="/logout" class="item">Logout</a>
+                    <% } %>   
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,91 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+
+button {
+    padding: 10px;
+}
+article {
+    margin-top: 1.5em;
+    padding-left: 1.0rem;
+}
+.ui.huge.header {
+    color:#939393;
+    margin-top: 15px!important;
+}
+.ui.header {
+    color: #939393;
+}
+hr {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.styled-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+img {
+    border-radius: 5px;
+}
+
+i {
+    font-size: 2em;
+}
+.ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-left: 0;
+}
+.ui .header {
+    color: #000;
+    font-size: 2em;
+}
+.ui .button {
+    color: #000;
+}
+.ui .card {
+    margin: .75em;
+    padding: 10px;
+    box-shadow: 0 0 1px 1px;
+}
+.ui .grid {
+    margin-top: 1em;
+}
+.ui.card:first-child {
+    margin-top: .75em;
+}
+.ui.card:last-child {
+    margin-bottom: .75em;
+}
+.extra {
+    margin-top: 10px;
+}
+.container.main {
+    margin-top: 7.0em;
+}
+.ui .segment {
+    border: none;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+.field .ui.button  {
+    margin-top: 1.5em;
+}
+
+.meta {
+    margin-top: 10px!important;
+}
+.author {
+    margin-top: 10px;
+}
+.ui.modal {
+    background: transparent;
+    box-shadow: 0 0 0 0;
+
+}
+
+.ui.modal > .content {
+    background: transparent;
+}

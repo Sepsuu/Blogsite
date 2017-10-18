@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+<div class="ui main text container">
+    <div class="ui huge header">
+        Posts
+    </div>
+    <% if ( blogs.length != 0 ) { %>
+    <div class="ui two column grid">
+      <div class="ui link cards">
+      <% blogs.forEach((blog) => { %>
+        <div class="card">
+          <div class="image" id="postImg">
+            <img src="<%= blog.image %>">
+          </div>
+          <div class="content">
+            <a class="header" href="/blogs/<%= blog._id %>"><%= blog.title %></a>
+            <div class="meta">
+              <span class="date"><%= blog.created.toDateString() %></span>
+            </div>
+            <div class="description">
+              <%- blog.body.substring(0, 100) %>...
+            </div>
+          </div>
+        </div>
+    <% }); %>
+      </div>
+    </div>
+    <% } else { %>
+    <p>Add new Post!</p>
+    <% } %>
+</div>
+<% include ./partials/footer %>
